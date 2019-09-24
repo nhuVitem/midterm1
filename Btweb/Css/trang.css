@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	display: flex;
+	grid-area: header;
+	background-color: lightblue;
+	justify-content: space-between;
+}
+.header p:hover{
+	color: white;
+}
+.header p{
+	color: purple;
+	font-size: 28px;
+	justify-content: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	font-size: 12px;
+	background-color: lightblue;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: green;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.negative{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	grid-area: negative;
+	background-color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 100px;
+}
+.negative div{
+	margin-top: 10px;
+	font-size: 20px;
+	color: green;
+	margin-left: 10px;
+	margin-right: 20px;
+	justify-content: center;
+	align-content: center;
+}
+.menu{
+	border: 1px solid lightblue;
+	margin-top: 10px;
+	grid-area: menu;
+}
+.menu-title{
+	background-color: lightblue;
+	color:purple;
+	font-size: 26px;
+}
+.menu-choose{
+	color:green;
+	margin-top: 10px;
+}
+.menu-choose p:hover{
+	color: lightblue;
+}
+.content-title{
+	background-color: lightblue;
+	color:purple;
+	font-size: 26px;
+}
+.content-slide{
+	margin-top: 10px;
+	background-color: lightblue;
+}
+.content{
+	margin-top: 10px;
+	margin-left: 20px;
+	grid-area: contentss;
+}
+.content p{
+	display: flex;
+	color: purple;
+	font-size: 16px;
+	justify-content: center;
+}
+.footer{
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+	grid-area: footer;
+	background-color: lightblue;
+}
+.footer-company{
+	flex-grow: 1;
+}
+.footer-company a{
+	margin-left: 20px;
+	text-decoration: none;
+	color: green;
+}
+.footer-customer{
+	flex-grow: 1;
+	margin-left: 100px;
+	color: green;
+}
+.footer-boss{
+	margin-top: 50px;
+	margin-left: 200px; 
+	flex-grow: 1;
+	color: green;
+}
+.grid-container{
+	display: grid;
+	grid-template-areas: 
+		'header header'
+		'negative negative'
+		'menu contentss'
+		'footer footer'
+		;
+}

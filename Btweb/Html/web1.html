@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<style>
+		.grid-container{
+	display: grid;
+	grid-template-areas:
+	  'header header header header'
+	  'main-bar main-bar main-bar main-bar'
+	  'menungang menungang menungang menungang'
+	  'menu content content content'
+	  'footer footer footer footer';
+	 font-size: 15px;
+}
+.header{
+	grid-area: header;
+	background-color: #669900;
+	color: white;
+	font-size: 25px;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-bar{
+    grid-area: main-bar;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu{
+	grid-area: menu;
+	background-color: pink;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #669900;
+	color: white;
+}
+.a{
+      flex-grow: 1;
+      height: 200px;
+    }
+.b{
+      flex-grow: 1;
+    }
+.c{
+      flex-grow: 1;
+    }
+ .footer-flex{
+     display: flex;
+    }
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	flex-grow: 1
+}
+
+.freeship{
+	flex-grow: 1
+}
+
+.bt1{
+	color: orange;
+	border: 1px solid orange
+	background-color orange;
+	border-radius: 5px;
+}
+.menungang{
+overflow: hidden;
+  background-color: #669900;
+  grid-area: menungang;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menungang a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+		
+	</style>
+	 
+
+</head>
+<body>
+
+	 <div class="grid-container">
+       <div class="header">
+       	 <b><i class="glyphicon glyphicon-user">Điện thoại: 090.635.1080</i></b>
+       	 <b><i class="glyphicon glyphicon-envelope">Email: dv@halink.vn</i></b> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+       	 <b><i class="glyphicon glyphicon-user">Đăng nhập-Đăng ký</i></b>
+       </div>
+       <div class="main-bar">
+       	<div class="flex">
+       	<div class="logo">
+       	<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/logo-halinkvn.png">
+       </div>
+       	<center><img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy1-0x0.png" height="30px"></center>
+       <div class="freeship">
+        <b>Miễn phí vận chuyển</b>
+        <br>
+        Bán kính 5 km
+</div>
+
+<img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy2-0x0.png" height="30px">
+<div class="freeship">
+<b>Hỗ trợ 24/7</b>
+<br>Hotline: 0366.90.80.87
+</div>
+
+
+<img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy3-0x0.png" height="30px">
+<div class="freeship">
+<b>Giờ làm việc</b>
+<br>6h00-22h00 (T2-CN)
+</div>
+
+<button class="bt1">Giỏ hàng</button>
+       </div>
+   </div>
+   <div class="menungang">
+          <a href="#">Trang chủ</a>
+          <a href="#">Giới thiệu</a>
+          <a href="#">Sản phẩm</a>
+          <a href="#">Tin tức</a>
+          <a href="#">Liên hệ</a>
+		
+				<input type="text" placeholder="Tìm kiếm" name="search" style="padding-right: 100px">	
+		</div>
+	</div>
+
+
+
+
+   </div>
+       <div class="menu">
+       	<div>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div class="vertical-menu">
+							<a href="#"class="active"><strong>DANH MỤC SẢN PHẨM</strong></a>
+							<a href="#">HẢI SẢN NHẬP KHẨU</a>
+							<a href="#">HẢI SẢN TƯƠI</a>
+							<a href="#">HOA QUẢ TƯƠI</a>
+							<a href="#">RAU, CỦ SẠCH</a>
+							<a href="#">THỊT TƯƠI</a>
+							<a href="#">THỰC PHẨM ĐÔNG LẠNH</a>
+							<a href="#">TRÁI CÂY TƯƠI</a>
+							<a href="#">ĐỒ UỐNG</a>
+
+						</div>
+					</td>
+					<td>
+						<div>
+							<div>
+								<img id="myImg" src="http://at01.chonweb.vn/wp-content/uploads/2019/07/blog-featured_fruit-20180502-850x340.jpg" height="350px">
+							</div>
+							<button onclick="button1Click()">1</button>
+							<button onclick="button2Click()">2</button>
+							<button onclick="button3Click()">3</button>
+							
+						</div>
+						<button>Hoa qua nhap khau</button>
+                         
+                        
+                          </div>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+       </div>
+       
+       
+        <div class="footer">
+       	 <div class="footer-flex">
+       	 <div class="a">
+       	 	LIÊN HỆ <br>
+Tòa nhà DTEC BUILDING - Số 6 Phan Chu Trinh, P.Tân <br>Thành, Q.Tân Phú, TP.HCM.
+<br>
+090.635.1080
+<br>
+dv@halink.vn
+       	 </div>
+       	 <div class="b">
+       	 	THÔNG TIN
+       	 	<ul>
+       	 		<li>Trang chủ</li>
+<li>Giới thiệu</li>
+<li>Sản phẩm</li>
+<li>Liên hệ</li>
+       	 	</ul>
+       	 </div>
+       	 <div class="c">
+       	 	FACEBOOK
+       	 </div>
+       	</div>
+       </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web of me </title>
+	<link rel="stylesheet" type="text/css" href="trang.css">
+	<script type="text/javascript">
+		var cars = ["cong nghe.png","dulich.png","dichvu.png","luat.png","quan doi.png","yhoc.png","khoahoc.png"];
+		var position = 0;
+		setInterval(function(){
+			document.getElementById('myId').src= cars[position++];
+					if (position==7){
+						position=0;
+					}
+				},3000);
+	</script>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header">
+			<p>
+			Kỹ Năng Cuộc sống		
+			</p>
+			<p>Liên Hệ</p>
+			<p> Đăng Nhập </p>
+			<p> Đăng Ký  </p>
+		</div>
+		<div class="negative">
+			<img src="Logo.png">
+			<div class="dropdown">
+				<img src="anhKNCN.png" width="100" height="50">
+				Kỹ Năng chuyên Ngành
+				<div class="dropdown-content">
+					<a href="">Du Lịch và dịch vụ nhà hàng - khách sạn </a>
+					<a href="">Giáo Dục và đào tạo  </a>
+					<a href="">Khoa học Máy tính và Công nghệ Thông tin</a>
+					<a href="">Khoa học xã hội và truyền thông </a>
+					<a href="">Khoa học ứng dụng và Khoa học cơ bản </a>
+					<a href="">Kinh doanh - quản lý </a>
+					<a href="">Kiến trúc - Xây dựng</a>
+					<a href="">Kỹ thuật </a> 
+					<a href="">Luật</a>
+					<a href="">Nghệ thuật sáng tạo và thiết kế </a> 
+					<a href="">Nhân văn</a> 
+					<a href="">Nông nghiệp và thú y </a>
+					<a href="">Y tế và sức khỏe </a>
+				</div> 
+			</div> 
+			<div class="dropdown">
+				<img src="anhKNM.png" width="100" height="50">
+				Kỹ Năng Mềm 
+				<div class="dropdown-content">
+					<a href=""> Kỹ năng hòa nhập </a>
+					<a href=""> Kỹ năng làm việc nhóm </a>
+					<a href=""> Kỹ năng lập kế hoạch </a>
+					<a href=""> Kỹ năng thuyết trình</a>
+					<a href=""> Kỹ năng  tiết kiệm </a>
+					<a href=""> Kỹ năng ứng xử </a>
+					<a href=""> Kỹ năng quản lý bản thân </a>
+					<a href=""> Kỹ năng lãnh đạo hiệu quả </a>
+					<a href=""> Kỹ năng đưa ra quyết định và giải quyết vấn đề </a>
+					<a href=""> Tư duy sáng tạo </a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<img src="anhKNTH.png" width="100" height="50">
+				Kỹ Năng thoát hiểm
+				<div class="dropdown-content">
+					<a href=""> Thoát cháy </a>
+					<a href=""> Thiên tai </a>
+					<a href=""> Bị tấn công </a>
+					<a href=""> Bị bắt cóc </a>
+					<a href=""> Bị rơi nước </a>
+					<a href=""> Kẹt thang máy </a>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menu-title">
+				Muc Luc 
+			</div>
+			<div class="menu-choose">
+				<p> -->Du Lịch và dịch vụ nhà hàng - khách sạn </p>
+				<hr>
+				<p> -->Giáo Dục và đào tạo  </p>
+				<hr>
+				<p> -->Khoa học Máy tính và Công nghệ Thông tin </p>
+				<hr>
+				<p> -->Khoa học xã hội và truyền thông </p>
+				<hr>
+				<p> -->Khoa học ứng dụng và Khoa học cơ bản </p>
+				<hr>
+				<p> -->Kinh doanh - quản lý </p>
+				<hr>
+				<p> -->Kiến trúc - Xây dựng </p>
+				<hr>
+				<p> -->Kỹ thuật </p>
+				<hr>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-title">
+				Tiêu Đề 
+			</div>
+			<div class="content-slide">
+				<center>
+					<img  id="myId" src="khoahoc.png" width="500" height="300">
+				</center>
+			</div>
+			<p>
+				<i>
+					Xét theo góc độ một ngành kinh tế, du lịch là ngành kinh doanh tổng hợp mang lại hiệu quả cao trên nhiều mặt: nâng cao hiểu biết về thiên nhiên, truyền thống lịch sử, văn hóa dân tộc, từ đó góp phần làm tăng thêm tình yêu đất nước. Bên cạnh đó, du lịch còn được coi là một hình thức xuất khẩu hàng hóa và dịch vụ tại chỗ, đem lại hiệu quả kinh tế rất lớn.
+				</i>
+				<i>
+					<b>Quản lý du lịch:</b> Lương khởi điểm: 10.000.000 - 15.000.000 VND.
+				</i>
+			</p>
+		</div>
+		<div class="footer">
+			<div class="footer-company">
+				<h1 style="color: purple">Thông Tin Các Công ty</h1> 
+				<a href="">Du Lịch và dịch vụ nhà hàng - khách sạn </a><br>
+				<a href="">Giáo Dục và đào tạo  </a><br>
+				<a href="">Khoa học Máy tính và Công nghệ Thông tin</a><br>
+				<a href="">Khoa học xã hội và truyền thông </a><br>
+				<a href="">Khoa học ứng dụng và Khoa học cơ bản </a><br> 
+				<a href="">Kinh doanh - quản lý </a><br> 
+				<a href="">Kiến trúc - Xây dựng</a><br>
+				<a href="">Kỹ thuật </a> <br>
+				<a href="">Luật</a><br>
+				<a href="">Nghệ thuật sáng tạo và thiết kế </a><br> 
+				<a href="">Nhân văn</a> <br>
+				<a href="">Nông nghiệp và thú y </a> <br>
+				<a href="">Y tế và sức khỏe </a>
+			</div>
+			<div class="footer-customer">
+				<h1 style="color: purple">Thông Tin cá nhân</h1> 
+				<img src="customer-image.png" width="100" height="100">
+				<p> Tên : Nguyễn Thị A</p>
+				<p> Tuổi: 25 </p>
+				<p> Giới tính: nữ </p>
+				<p> Chuyên Ngành Đã chọn : Công nghệ thông tin</p>
+				<p> Trình Độ chuyên Ngành : Cao Đẳng </p>
+				<p> Tín chỉ hoàn thành : 12/161</p>
+			</div>
+			<div class="footer-boss">
+				<p>
+					<h1 style="color: purple">Tôi là :</h1>
+					<b><i>Trâm</i></b> 
+					<br> Nguyễn Hương Ngọc Trâm  
+				</p>
+				<p>
+					<h1 style="color: purple"> My name is :</h1>
+					<i>Poppies Queen </i>
+				</p>
+		</div>
+	</div>
+
+</body>
+</html>

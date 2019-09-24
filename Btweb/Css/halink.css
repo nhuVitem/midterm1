@@ -1,0 +1,211 @@
+.flex-container{
+			display: flex;
+			justify-content: space-between;
+
+		}
+.flex{
+			display: flex;
+		}
+.menu ul {
+  background: #00CD00;
+  list-style-type: none;
+  text-align: left;
+}
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.menu a:hover {
+  background: #FF7F00;
+  color: #333;
+}
+
+.search{
+  float:right;
+  
+  
+  border-radius: 7px;
+
+  padding-top: 10px;
+  padding-right: 160px;
+  outline: none;
+}
+.btsch{
+	float: left;
+	
+}
+.tex{
+	float:left;
+}
+.menudoc{
+	border:1;
+	border-radius: 10px;
+	border:1px solid lightgrey;
+	margin-left: 30px;
+}
+.menudoc ul {
+  background: white;
+  width: 300px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.menudoc li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+.menudoc li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+.menudoc ul li a:hover {
+  color:#FF7F00;
+}
+.tieude{
+	background: #00CD00;
+	text-align: center;
+	border:1;
+	border-radius: 10px;
+}
+.hqnhap{
+	color: white;
+	border:1;
+	border-radius: 12px;
+	background-color: #00CD00;
+	margin-top: 30px;
+	margin-left: 30px;
+	border-color: #00CD00;
+
+}
+.xemthem{
+	color:orange;
+	margin-top: 30px;
+	text-decoration: none;
+	margin-right: 30px;
+
+}
+.xemthem:hover{
+	color:#00CD00;
+
+}
+/*.anhNho{
+	width: 150px;
+	height: 150px;
+
+}*/
+.thongtin{
+	text-align: center;
+}
+.sanpham{
+	border: 1px solid lightgrey;
+	margin-top: 20px;
+	margin-left: 30px;
+	/*
+	border-radius: 60px;
+	margin-top: 20px;
+	margin-left: 30px;
+	border-color: red;*/
+	}
+.thongtin{
+	margin-top: 30px;
+	
+}
+.button1{
+	margin-bottom: 10px;
+
+	height: 40px;width: 90px;
+
+
+
+}
+.button2{
+
+	margin-bottom: 10px;
+
+	height: 40px;width: 90px;
+
+
+}
+
+.button1 a{
+	text-decoration: none;
+	color:green;
+
+	
+}
+.button2 a{
+	text-decoration: none;
+	color: white;
+}
+.tomau{
+	color:orange;
+}
+.gia{
+	margin-left: 10px;
+
+}
+.gach{
+	text-decoration: line-through;
+	color: grey;
+
+}
+.cach{
+	margin-bottom: 10px;
+	margin-top: 35px;
+}
+.footer{
+	display: flex;
+	background-color: #65932A;
+	color: white;
+	margin-top: 20px;
+	height: 300px;
+}
+.thongtinfter li a{
+  text-decoration: none;
+  color: white;
+
+}
+.thongtinfter{
+	margin-left: 20px;
+}
+.lienhe{
+	margin-left: 20px;
+}
+.ndfooter{
+	margin-top: 20px;
+	line-height: 20px;
+}
+.ndfooter li {
+	margin-top: 15px;
+}
+.gachft{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background-color: green;
+
+}
+.cachtrai{
+	margin-left: 20px;
+}
+.cachphai{
+	margin-right: 20px;
+}
+
+

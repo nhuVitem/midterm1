@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+<meta charset="utf-8">
+<style>
+body{
+   font-family: Arial, Tahoma;
+   font-size: 12px;
+}
+
+#main{
+   width: 1200px;
+   padding: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+#head{
+   height: 100px;
+   background-color: #F5F5F5;
+   border: 1px solid #CDCDCD;
+   margin-bottom:5px;
+}
+#head-link{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #CDCDCD;
+    background-color: #F5F5F5;
+    margin-bottom:5px;
+    clear: both;
+}
+#left{
+    width: 150px;
+    min-height: 700px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    background-color: yellow;
+    margin-bottom: 5px;
+
+    
+}
+#content{
+    width: 850px;
+    min-height: 700px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: pink;
+}
+#right{
+    width: 180px;
+    min-height: 700px;
+    border: 1px solid #CDCDCD;
+    float:right;
+    margin-bottom: 5px;
+    background-color: pink;
+}
+#footer{
+    height: 100px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    background-color: pink;
+}
+      .mau1{
+        color: red;
+
+       }
+     .mau2{
+        color: blue;
+       }
+      .green{
+      color: red;
+      }
+
+      nav{
+          background-color:#47bdec;
+      }
+      nav a{
+          display:inline-block;
+          padding:10px;
+          font-size:20px;
+          color:white;
+          text-decoration:none;
+      }
+      nav a:hover{
+          background-color:#333;
+      }
+
+      .clearfix:after {
+    display:block;
+    clear:both;          
+}
+.wrapper {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+    background:#3e3436;
+}
+ 
+/*----- Phần menu -----*/
+.menu {
+    width:1200px;
+    margin:0px auto;
+    background:#bf5c71;
+    height: 50px;
+    margin-top: 0px auto;
+}
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+/*----- css cho phần menu cha -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:white;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+/*----css cho menu con----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+
+
+.menu li:hover .sub-menu1 {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu1 {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menu1 li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu1 li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menu1 li a:hover, .sub-menu1 .current-item a {
+    background:#3e3436;
+}
+
+
+.menu li:hover .sub-menucon1{
+    z-index:1;
+    opacity:1;
+}
+.sub-menucon1 {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menucon1 li {
+    display:block;
+    font-size:16px;
+}
+.sub-menucon1 li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menucon1 li a:hover, .sub-menucon1 .current-item a {
+    background:#3e3436;
+
+  }
+
+  
+
+  .menu li:hover .sub-menucon3{
+    z-index:1;
+    opacity:1;
+}
+.sub-menucon3 {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menucon3 li {
+    display:block;
+    font-size:16px;
+}
+.sub-menucon3 li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menucon3 li a:hover, .sub-menucon3 .current-item a {
+    background:#3e3436;
+
+  }
+
+  .sub-menucon3 {
+
+  }
+
+  .menu li:hover .sub-menuconvd{
+    z-index:1;
+    opacity:1;
+}
+.sub-menuconvd {
+    width:160%;    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menuconvd li {
+    display:block;
+    font-size:16px;
+}
+.sub-menuconvd li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menuconvd li a:hover, .sub-menuconvd .current-item a {
+    background:#3e3436;
+
+  }
+
+  .menu li:hover .sub-menuconClass4{
+    z-index:1;
+    opacity:1;
+}
+.sub-menuconClass4 {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menuconClass4 li {
+    display:block;
+    font-size:16px;
+}
+.sub-menuconClass4 li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menuconClass4 li a:hover, .sub-menuconClass4 .current-item a {
+    background:#3e3436;
+
+  }
+</style>
+</head>
+<body>
+<div id="main">
+   <div id="head" >
+
+   <img src="https://t3.ftcdn.net/jpg/02/34/53/26/500_F_234532660_x4VMFWTOKBx1dfZ0SnXjMH8mXTjvTTIG.jpg" width= "150" height="85"> 
+    
+   </div>
+ <center><nav class="menu">
+        <ul class="clearfix">
+            <li><a href="#">HOME</a></li>
+            <li>
+                <a href="#">GUITAR TYPE <span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="#">UKULELE</a></li>
+
+
+                    <li><a href="#">CLASSIC </a></li>
+
+                    <li><a href="#">AUCOSTIC</a></li>
+                    <li><a href="#">BANJO</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">PICTURE </a>
+
+              <ul class="sub-menu1">
+                    
+                        
+
+                    </li>
+
+
+                    <li><a href="#">CLASSIC</a>
+
+                      <ul class="sub-menucon3">
+                            <li><a href="#">CLASSIC1</a></li>
+
+
+                            <li><a href="#">CLASSIC2 </a></li>
+
+                            <li><a href="#">CLASSIC3</a></li>
+
+                            <li><a href="#">CLASSIC4</a>
+
+                              <ul class="sub-menuconClass4">
+                                      <li><a href="#">CLASSIC4.1</a></li>
+
+
+                                      <li><a href="#">CLASSIC4.2 </a></li>
+
+                                      <li><a href="#">CLASSIC4.3</a></li>
+
+
+                                </ul>
+                                      
+
+
+                            </li>
+                </ul>
+
+
+
+                    </li>
+
+                    <li><a href="#">AUCOSTIC</a></li>
+                    <li><a href="#">BANJO</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="current-item"><a href="#">VIDEO <span class="arrow">&#9660;</span> </a>
+
+               <ul class="sub-menuconvd">
+                            <li><a href="#">CLASSIC1</a></li>
+
+
+                            <li><a href="#">CLASSIC2 </a></li>
+
+                            <li><a href="#">CLASSIC3</a></li>
+                            <li><a href="#">CLASSIC4</a></li>
+                </ul>
+
+
+
+            </li>
+
+            <li><a href="#">AUDIO</a></li>
+        </ul>
+    </nav></center>
+   
+
+   <div id="left">
+
+    center><h1>GUITAR FOOD</h1></center>
+
+       <hr><center><a href="../Html/thu2.html">MENUT2 </a></center>
+
+        <hr><center><p><a href="../Html/thu3.html">MENUT3</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu4.html">MENUT4</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu5.html">MENUT5</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu6.html">MENUT6</a></p></center></hr>
+
+       
+          
+        <p><img src="https://az58332.vo.msecnd.net/e88dd2e9fff747f090c792316c22131c/Images/Products28023-1200x1200-1590842.jpg" width= "150" height="200"></p>
+      
+
+         <p>DO YOU KNOW UKULELE?</p>
+   </div>
+
+
+   <div id="content">
+        <p><img src="../Image/ga.jpg" width= "150" height="150"></p>
+      <p> GA CONG NGHIEP</p>
+
+      <button name="button" value="OK" type="button" onclick="hello()">Buy</button> 
+         <script>  
+        function hello()
+        {  
+        alert("second years student,50dolla/person");  
+            }  
+        </script>
+
+
+        <p><span > <img src="../Image/ukulelemau.jpg" width= "150" height="150" alt="Sprano" /> 
+         
+        &ensp; &ensp; &ensp; 
+        <img  src="../Image/ukulele.jpg" width= "150" height="150">
+
+        &ensp; &ensp; &ensp; 
+        <img  src="../Image/ukulele.jpg" width= "150" height="150">
+
+        &ensp; &ensp; &ensp; 
+        <img  src="../Image/ukulele.jpg" width= "150" height="150">
+
+       
+
+
+        </span></p>
+
+         
+
+
+   </div>
+
+   <div id="right">
+
+        <center><h1>GUITAR FOOD</h1></center>
+
+       <hr><center><a href="../Html/thu2.html">MENUT2</a></center>
+
+        <hr><center><p><a href="../Html/thu3.html">MENUT3</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu4.html">MENUT4</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu5.html">MENUT5</a></p></center></hr>
+
+        <hr><center><p><a href="../Html/thu6.html">MENUT6</a></p></center></hr>
+
+        <p><img src="https://az58332.vo.msecnd.net/e88dd2e9fff747f090c792316c22131c/Images/Products28023-1200x1200-1590842.jpg" width= "150" height="200"></p>
+
+      <p>HELLO MR.DINH</p>
+   </div>
+
+   <div id="footer">
+
+         <p ><img src="https://westgateit.co.uk/wp-content/uploads/2018/06/footer-logo-westgate-IT.png" width= "50" height="30"> WELCOME TO GUITAR RESTAURENT </p>
+   </div>
+
+
+</div>
+</body>
+</html>

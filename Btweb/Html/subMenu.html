@@ -1,0 +1,403 @@
+
+<html>
+    <head>
+        <title>Tạo menu đa cấp(>3cấp)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+
+ *{ margin: 0px; padding: 0px;}
+    a{ text-decoration: none; color: #888;}
+      ul li{ list-style: none;}
+			.clearfix:after {
+			    content: ".";
+			    display: block;
+			    clear: both;
+			    visibility: hidden;
+			    line-height: 0;
+			    height: 0;
+			}
+			.clearfix {
+			    clear: both;
+			    display: block;
+			}
+					body{ font-family: arial; font-size: 13px; }
+
+					.wrapper_container{
+					    width: 960px;
+					    margin: 0px auto;
+					}
+
+			/*this is style header*/
+			#head{ background: #f4f4f4;}
+			#logo, #main_menu{ float: left;}
+			#logo img{height: 42px;
+			margin-top: 5px;}
+			#search{ float: right;}
+
+			#main_menu>li{ float: left; border-right: 1px solid #E8E8E8;}
+			#main_menu>li:last-child{ border-right: none;}
+			#main_menu li{ position: relative;}
+			#main_menu>li a{display: block; text-transform: none; padding: 10px;}
+			#main_menu>li>a{ text-transform: uppercase;}
+			#main_menu>li>a{ display: block; padding: 20px;}
+
+			#main_menu li .sub_menu{ position: absolute; display: none;
+			width: 200px;
+			background: #f5f5f5;
+			top: 0px;
+			left: 100%;
+			}
+			#main_menu li:hover>.sub_menu { display: block;}
+			#main_menu>li>.sub_menu{top: 55px;position: absolute;
+			left: 0px;}
+			#main_menu li:hover{ background: #fcfcfc;}
+
+			#search input[type='text']{width: 139px;
+			margin-top: 14px;
+			padding: 5px;
+			outline: none;
+			background: #EFEFEF;
+			background: url(../images/search.png) no-repeat 106px 2px;
+			border: none;
+			background-size: 28px;}
+
+
+			/*this is style main_content*/
+			#main_content { min-height: 450px;}
+			#main_content .info_page p{ text-align: center; text-transform: uppercase; }
+			#main_content .info_page p:first-child{ font-size: 35px;
+			color: #f00;
+			margin-top: 40px;
+			margin-bottom: 7px;}
+			#main_content .info_page p:last-child{ color: #E48585;}
+
+
+			/*this is style footer*/
+			#footer{  background: #f9f9f9;
+			padding: 20px 0px;
+			color: #A6A6A6;
+			line-height: 20px;
+			}
+			#footer .info p:first-child{ text-transform: uppercase;}
+
+
+			}
+
+
+#mainnav{
+  padding: 10px;
+  margin: 10px;
+}
+#mainnav ul{
+  background: #3B5998;
+  list-style: none;
+  padding: 0px;
+  width: 200px;
+  text-align: left;
+}
+#mainnav ul li{
+  position: relative;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #fff;
+}
+#mainnav ul .thefirst{
+  background: #1D1F20;
+}
+#mainnav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 16px;
+  display: block;
+}
+#mainnav li:hover{
+  background: #17306E;
+}
+#mainnav .sub-menu{
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  width: 200px;
+  display: none;
+  text-align: left;
+  border-left: 1px solid #fff;
+  font-size: 90%;
+  border-radius: 0px 10px 10px 0px;
+}
+#mainnav li:hover .sub-menu{
+  display: block;
+  background: #3B5998;
+  color: red;
+}
+#mainnav .sub-menu2{
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 200px;
+  border-left: 1px solid #fff;
+  border-radius: 0px 10px 10px 0px;
+  display: none;
+}
+#mainnav .sub-menu li:hover .sub-menu2{
+  display: block;
+}
+#mainnav .sub-menu3{
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 200px;
+  border-left: 1px solid #fff;
+  border-radius: 0px 10px 10px 0px;
+  display: none;
+}
+#mainnav .sub-menu2 li:hover .sub-menu3{
+  display: block;
+}
+
+
+
+table, th, td{
+            border:dashed solid #ccc; 
+            border-bottom-style: dashed;
+        
+
+        }
+        table{
+
+            border:10px;
+            width:50%;
+        }
+        th, td{
+            text-align:left;
+            padding:10px;
+        }
+        tr:hover{
+            background-color:#ddd;
+            cursor:pointer;
+        }
+
+        @keyframes move{
+        from{ top: 0px;}
+        to{ top: 100px;}
+    }
+    h3{
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        background-color: orange;
+    }
+
+    
+
+
+
+        	
+        </style>
+    </head>
+
+    <body bgcolor="pink" >
+        <div id="wrapper">
+            <div id="head" class="clearfix">
+                <div class="wrapper_container">
+                    <div id="logo">
+                        <a href="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gCpdbxeZBd2al7dt8QIJX5gIlJJWg-VCgeng0H3ANxHdfiJb">
+                        </a>
+                    </div>
+                    <ul id="main_menu">
+                        <li><a href="">Trang chủ</a></li>
+                        <li>
+                            <a href="">Guitar</a>
+                            <ul class="sub_menu">
+                                <li><a href="">Aucostic</a>
+                                    <ul class="sub_menu">
+                                        <li><a href="">Classic</a></li>
+                                        <li><a href="">Ukulele</a>
+                                            <ul class="sub_menu">
+                                                <li><a href="">Ukulele Sprano</a></li>
+                                                <li><a href="">Ukulele Concert</a></li>
+                                                <li><a href="">Ukulele Color</a></li>
+                                                <li><a href="">Electric</a>
+                                                    <ul class="sub_menu">
+                                                        <li><a href="">Banjo</a></li>
+                                                        <li><a href="">Bass</a></li>
+                                                        <li><a href="">Organ</a></li>
+                                                        <li><a href="">Sao</a></li>
+                                                        <li><a href=""> Tranditional</a></li>
+                                                   </ul></li>
+                                                <li><a href="">Dan bau</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Dan Nhi</a></li>
+                                        <li><a href="">Dan Tranh</a></li>
+                                        <li><a href="">Nhac cu nuoc ngoai</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Violin</a></li>
+                                <li><a href="">Saxophone</a></li>
+                                <li><a href="">Harmonica</a></li>
+                                <li><a href="">Drums</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Nhạc cụ khác</a></li>
+                        <li><a href="">Phụ kiện</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">App/game</a></li>
+                        
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Tìm kiếm </a></li>
+
+                    </ul>
+                    <form id="div1">
+
+                         
+                          
+                        <span><input type="text" name="Search :" id="Search" >
+                        <button type="button">Click me!</button></span> 
+                    </form>
+
+
+                </div>
+            </div>
+
+            <div id="left">
+   <marquee><center> <h1>Học viện âm nhạc Vịt Em</h1></center></marquee>
+            <a href=""></a>
+
+   
+    <div id="mainnav">
+  <ul>
+    <li class="thefirst"><a href="#">Chuyên mục</a>
+      <ul class="sub-menu">
+        <li><a href="#">Video huong dan</a></li>
+        <li><a href="#">Address</a>
+          <ul class="sub-menu2">
+            <li><a href="#">Ad1: Đông Giang-Quảng Nam</a></li>
+            <li><a href="#">Ad2: Lê Hữu Trác-Đà Nẵng</a></li>
+            <li><a href="#">Ad3: Chư Pư-Gia Lai </a></li>
+            <li><a href="#">Ad3: 99Tô Hiến Thành</a></li>
+           
+          </ul>
+        </li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Class</a></li>
+        <li><a href="#">Time</a></li>
+        <li><a href="#">Game</a></li>
+        <li><a href="#">Sale</a>
+        <ul class="sub-menu2">
+            <li><a href="#"> Sale 50%</a></li>
+            <li><a href="#"> Code sale</a>
+              <ul class="sub-menu3">
+                <li><a href="#">Code sale 1.a</a></li>
+                <li><a href="#">Code sale 2.a</a></li>
+                <li><a href="#">Code sale 3.a</a></li>
+              </ul>
+            </li>
+            <li><a href="#">item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Liên hệ</a></li>
+    <li><a href="#">Đánh giá</a></li>
+    <li><a href="#">App</a></li>
+    <li><a href="#">Hoi dap</a></li>
+    <li><a href="#">Bat dau</a></li>
+  </ul>
+
+  
+</div>
+        	
+</div>
+
+            <div class="clearfix"></div>
+
+            <div id="main_content">
+            	<span><img src="../Image/ga.jpg" width= "200" height="200">
+              <p>Ga cong nghiep</p><p>880.000vnd</p> &ensp; &ensp; <img src="../Image/ukulelekits.jfif" width= "200" height="200"><p>Ukulele concert</p><p>995.000vnd</p>  
+            		<button name="button" value="OK" type="button" onclick="hello()">Buy</button> 
+         <script>  
+        function hello()
+        {  
+        alert("second years student,50dolla/person");  
+            }  
+        </script>
+
+
+            	</span>
+
+                <div class="wrapper_container">
+                    <div class="info_page">
+
+                      <h3>Chao mung cac ban den voi hoc vien am nhac vit em</h3>
+                     
+                     <main >
+        <div class="a1">
+          <a href="https://www.mayguitar.com/"><img src="../Image/banjo.jpg" width="200em" height="150em" title="Banjo"></a>
+          <a href="https://www.mayguitar.com/"><img src="../Image/classic.jpg" width="200em" height="150em" title="Classic"></a>
+         <a href="https://www.mayguitar.com/"><img src="../Image/bass.jpg" width="200em" height="150em" title="Bass"></a>
+          <a href="https://www.mayguitar.com/"><img src="../Image/cappo.jpg" width="200em" height="150em" title="Cappo"></a>
+          <a href="https://www.mayguitar.com/"><img src="../Image/ukulele.jpg" width="200em" height="150em" title="Ukulele"></a>
+        </div>
+    </main>
+
+                        <table border="3" bgcolor="yellow" width="500" height="200">
+                            <caption>Price information</caption>
+                            <thead>
+                              <tr bgcolor="green" >
+                                <th>Guitar type</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                              </tr>
+
+                              <tr bgcolor="pink">
+                                  <td>Aucostic</td>
+                                  <td>3.000.000</td>
+                                  <td>100</td>
+                                </tr>
+                                <tr bgcolor="white">
+                                  <td>Classic</td>
+                                  <td>2.500.000</td>
+                                  <td>150</td>
+                                </tr>
+                                <tr bgcolor="blue ">
+                                  <td>Ukulele</td>
+                                  <td>300</td>
+                                  <td>880.000</td>
+                                </tr>
+                                <tr bgcolor="beige ">
+                                  <td>Tổng số guitar cac loai</td>
+                                  <th colspan="2">550</th>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                           <center><h2 >BÀ TÂN VLOG</h2></center>
+  
+      
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="footer">
+                <div class="wrapper_container">
+                    <div class="info">
+                        <p>HỌC VIỆN ÂM NHẠC VỊT EM</p>
+                        <p>Địa chỉ: 99 Tô Hiến Thành-Đà Nẵng</p>
+                        <p>Tel:0962973782</p>
+                        <p>Email:nhu.nguyen21@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

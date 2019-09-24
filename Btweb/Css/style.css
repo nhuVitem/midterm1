@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Ví dụ CSS</title>
+		<style>
+			p,h1{
+				color: red;
+				background-color: 
+				font-style: italic;
+				font-size: 150%;
+			}
+			h1{
+				text-align: center;
+				font-size: 250%;
+				border-bottom-style: solid;
+				border-bottom-color: yellow;
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+	</html>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.flex-container{
+			display: flex;
+			justify-content: space-between;
+
+		}
+.flex{
+			display: flex;
+		}
+.menu ul {
+  background: #00CD00;
+  list-style-type: none;
+  text-align: left;
+}
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.menu a:hover {
+  background: #FF7F00;
+  color: #333;
+}
+
+.search{
+  float:right;
+  
+  
+  border-radius: 7px;
+
+  padding-top: 10px;
+  padding-right: 160px;
+  outline: none;
+}
+.btsch{
+	float: left;
+	
+}
+.tex{
+	float:left;
+}
+.nav{
+			background-color: #ADFF2F;
+
+			list-style: none;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+		
+		}
+
+		.nav li{
+			display: inline;
+			font-size: 20px;
+			padding: 20px;
+			float: left;
+		}
+		.cap1{
+			background-color: #ADFF2F;
+			list-style: none;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+		.cap1 li{
+			display: inline;
+			font-size: 20px;
+			padding: 10px;
+		}
+		.a{
+			float: left;
+		}
+		.b{
+			float: right;
+		}
+
+		#head{
+   height: 100px;
+   width: 1362px;
+   background-color: white;
+   border: 1px solid #CDCDCD;
+   margin-bottom:5px;
+}
+i{
+	color: red;
+}
+b{
+	color: green;
+}
+input[type="texta"]:focus{
+    width:500px; 
+}
+
+input[type="texta"] {
+      width: 200px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline:none;
+      padding: 12px 14px;
+    }
+
+.drop{
+	width: 350px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline:none;
+      padding: 12px 14px;
+  }
+.tb{
+ 	margin-left: 750px;
+ 	margin-top: -300px;
+ }
+ .thop{
+ 	display: flex;
+ }
+ .nut{
+ 	width: 600px;
+ 	height: 40px;
+ 	color: black;
+ 	background-color: pink;
+ 	margin-right: 30px;
+ 	margin-top: 10px;
+ 	text-align: center;
+ 	padding-top: 20px;
+
+ }
+	</style>
+
+</head>
+<body>
+	<div class="flex-container" style="background-color: green; color:white;height: 40px">
+		<div class="flex-container" style="margin-right:20px; margin-left: 20px;">
+			<img src="../Image/dienthoai.png" width="20" height="20" style="margin-top: 10px">
+			<p>
+
+				Điện thoại:093.093.3424
+			</p>
+			<img src="../Image/anhmid4.jfif" width="20" height="20" style="margin-top: 10px; margin-left:30px ">
+			<p>Email: dv@halink.vn</p>
+		</div>
+		<div class="flex-container">
+			<img src="../Image/dangnhap.png" width="20" height="20" style="margin-top: 10px; margin-right: 10px">
+			<p>Đăng nhập-Đăng kí</p>
+		</div>
+		
+	</div>
+	<div class="flex-container" style="margin-top: 20px; margin-right: 30px;margin-left: 30px">
+		
+	
+		<div style="margin-left: 30px">
+			<img src="../Image/anhmid1.PNG" width="150" height="90">
+		</div>
+		<div class="flex-container">
+			<img src="../Image/xetai.jpg" width="30" height="30" style="margin-top: 20px; margin-right: 10px">
+			<p><b>Miễn phí vận chuyển</b></br>Bán kính 5km</p>
+
+			
+		</div>
+		<div class="flex-container">
+			<img src="../Image/email.jpg" width="30" height="30" style="margin-top: 20px; margin-right: 10px">
+			<p><b>Hỗ trợ 24/7 </b></br>Hotline:093.453.2456</p>
+		</div>
+		<div class="flex-container">
+			<img src="../Image/donhho.jpg" width="30" height="30" style="margin-top: 20px; margin-right: 10px">
+			<p><b> Giờ làm việc</b></br>6h00-22h00(T2-CN)</p>
+		</div>
+		<div class="flex-container" style="margin-right: 20px; border=1; border-radius: 10px  ">
+			<button class="flex-container" style="background-color: orange;color: white;border=1; border-radius: 15px">
+				<img src="../Image/giohang.png" width="20" height="20" style="margin-top: 15px; margin-right: 10px">
+				<p>Giỏ hàng(0)</p>
+				
+			</button>
+		</div>
+
+		
+	</div>
+	<div class="menu">
+		<ul>
+		    <li><a href="#">Trang chủ</a></li>
+		    <li><a href="#">Giới thiệu</a></li>
+		    <li><a href="#">Sản phẩm</a></li>
+		    <li><a href="#">Tin tức</a></li>
+		    <li><a href="#">Liên hệ</a></li>
+
+		    <div class="search">
+			    <form>
+	            <input class ="tex" type="text" name="search" placeholder="Search..">
+	             <button type="submit"><i class="btsch"></i></button>
+
+	            </form>
+	        </div>
+		</ul>
+	</div>
+
+	<h2>Đặt mua mẫu:<i>AT01</i></h2>
+	<p><img src="../Image/so1.jpg" alt="1" width="40px" height="40px"><b>Nhập thông tin khách hàng</b>
+
+
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+
+	 <img src="../Image/so2.jpg" alt="1" width="40px" height="40px"><b>Chọn hình thức thanh toán</b>
+
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+	 &ensp;&ensp;&ensp;&ensp;&ensp;
+
+	 <img src="../Image/s3.png" alt="1" width="40px" height="40px"><b>Xem lại đơn hàng</b>
+
+	</p>
+	&ensp;&ensp;&ensp;&ensp;&ensp;
+	&ensp;&ensp;&ensp;&ensp;&ensp;
+
+    
+
+	
+
+         <form>
+        <input type="texta" name="hoten" placeholder="* Họ và tên">
+         &ensp;&ensp;&ensp;&ensp;&ensp;
+
+	     &ensp;&ensp;&ensp;&ensp;&ensp;
+        
+        <form>
+					    <select class="drop" name="dropdown">
+					    <option value="thanhtoan" selected>Internet Banking/ATM nội địa (giảm 5%)</option>
+					    <option value="sl">Visa/MasterCard/JCB (giảm 5%)</option>
+					    <option value="sl">Chuyển khoản 100% (giảm 5%)</option>
+					    <option value="sl">Chuyển khoản trước 50%</option>
+					    <option value="sl">Trả tiền mặt tại văn phòng</option>
+					   
+					    </select>
+				</form>
+         </form>
+         &ensp;&ensp;&ensp;&ensp;&ensp;
+         <form>
+         	<input type="texta" name="hoten" placeholder="* Điện thoại">
+         	<b>Thanh toán online bằng Internet Banking hoặc thẻ ATM nội địa để được  </b>
+
+         	&ensp;&ensp;&ensp;&ensp;&ensp;
+	        &ensp;&ensp;&ensp;&ensp;&ensp;
+	        &ensp;&ensp;&ensp;&ensp;&ensp;
+	        &ensp;&ensp;&ensp;&ensp;&ensp;
+
+
+        </form>
+        &ensp;&ensp;&ensp;&ensp;&ensp;
+        <form>
+        	<input type="texta" name="hoten" placeholder="* Email">
+        	<b> giảm giá ngay 5% hỗ trợ tất cả ngân hàng, thanh toán an toàn qua cổng VTCPay.</b>
+        </form>
+         &ensp;&ensp;&ensp;&ensp;&ensp;
+        <form>
+        	<input type="texta" name="hoten" placeholder="* Địa chỉ">
+        &ensp;&ensp;&ensp;&ensp;&ensp;
+        
+        </form>
+        &ensp;&ensp;&ensp;&ensp;&ensp;
+        <form>
+        	<input type="texta" name="hoten" placeholder="Chi chú">
+        </form>
+<div class="tb">
+        <table border="2" width="500" height="400">
+	        	<thead>
+	        		<tr>
+	        			<th><img src="../Image/anhmid12.png" alt="Mẫu AT01" width="100px" height="100px">  Mẫu AT01 &ensp;&ensp;&ensp;&ensp;&ensp;
+	                    &ensp;&ensp;&ensp;&ensp;&ensp; 2.800.000 </th>
+	        		</tr>
+	        	</thead>
+	        	<tbody>
+	        		<tr>
+	        			<td><a href="#">Nhập mã giảm giá>></a></td>
+	        			
+	        		</tr>
+
+	        		<tr>
+	        			<td>Tạm tính &ensp;&ensp;&ensp;&ensp;&ensp;
+	                    &ensp;&ensp;&ensp;&ensp;&ensp; 2.800.000</a></td>
+	        		</tr>
+	        		<tr>
+	        			<td>Giảm giá &ensp;&ensp;&ensp;&ensp;&ensp;
+	                    &ensp;&ensp;&ensp;&ensp;&ensp; -140.000đ</td>
+	        			
+	        		</tr>
+	        		<tr>
+	        			<td>Tổng cộng &ensp;&ensp;&ensp;&ensp;&ensp;
+	                    &ensp;&ensp;&ensp;&ensp;&ensp; 2.540.000đ</td>
+	        			
+	        		</tr>
+
+	        		
+	        	</tbody>
+	        </table>
+	        <div class="nut">
+	        	<a href="#">dat hang</a>
+	        </div>
+	      </div>
+<div class="thop">
+	
+
+ <div class="hotro">
+	      <h1 font-size:40px><img src="../Image/phao.jpg" width="100px" height="100px">Hỗ trợ &ensp;<i>tư vấn</i></h1>
+
+	      <div class="flex-container" style="margin-right: 50px; border=1; border-radius: 2px  ">
+			<button class="flex-container" style="color: black;border=1; border-radius: 20px">
+				<b>Kinh doanh: Ms.Như <img src="../Image/sky.jpg" width="40px" height="40px"> 096 698 1085</b> 
+			</button>
+		</div>
+		
+	      <p><div class="flex-container" style="margin-right: 50px; border=1; border-radius: 2px  ">
+			<button class="flex-container" style="color: black;border=1; border-radius: 20px">
+				<b>Kinh doanh: Ms.Tiến <img src="../Image/sky.jpg" width="40px" height="40px"> 090 635 1080</b> 
+			</button>
+		</div>
+		</p>
+		
+		<p><div class="flex-container" style="margin-right: 50px; border=1; border-radius: 2px  ">
+			<button class="flex-container" style="color: black;border=1; border-radius: 20px">
+				<b>Chăm sóc khách hàng <img src="../Image/sky.jpg" width="40px" height="40px"> 0938 98 7577</b> 
+			</button>
+		</div>
+		</p>
+	</div>
+
+		<div class="tintuc">
+			 <h1 font-size:40px><img src="../Image/loa.jpg" width="100px" height="100px">Tin tức</h1>
+			 <p>5 thành phần có trên website trên thương mại điện tử</p>
+			 <p>3 lớp nền tảng quan trọng cho thiết kế website chuyên nghiệp</p>
+			 <p>5 giải pháp hàng đầu cho nền tảng website chuyên nghiệp</p>
+			 <p>Cách thức điêu luyện để thu hút khách hàng thông qua website của bạn</p>
+			 <p>6 lợi ích rực rỡ mà thiết kế website chuyên nghiệp mang lại cho bạn</p>
+		</div>
+</div>
+
+			
+	
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+ .flex-container{
+
+			display: flex;
+			justify-content: space-between;
+		}
+
+.flex{
+			display: flex;
+		}
+
+.menu ul {
+  background: #00CD00;
+  list-style-type: none;
+  text-align: left;
+}
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.menu a:hover {
+  background: #FF7F00;
+  color: #333;
+}
+
+.search{
+  float:right;
+  
+  
+  border-radius: 7px;
+
+  padding-top: 10px;
+  padding-right: 160px;
+  outline: none;
+}
+.btsch{
+	float: left;
+	
+}
+.tex{
+	float:left;
+}
+
+.menu ul {
+  background: #000080;
+  list-style-type: none;
+  text-align: left;
+}
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.menu a:hover {
+  background: #FF7F00;
+  color: #333;
+}
+
+.search{
+  float:right;
+  
+  
+  border-radius: 7px;
+
+  padding-top: 10px;
+  padding-right: 160px;
+  outline: none;
+}
+.btsch{
+	float: left;
+	
+}
+.tex{
+	float:left;
+}
+
+.menudoc{
+	border:1;
+	border-radius: 0px;
+	border:1px solid lightgrey;
+	margin-left: 30px;
+}
+.menudoc ul {
+  background: white;
+  width: 300px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.menudoc li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+.menudoc li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+.menudoc ul li a:hover {
+  color:#FF7F00;
+}
+.tieude{
+	background: #00CD00;
+	text-align: center;
+	border:1;
+	border-radius: 1px;
+}
+
+.menu2 ul {
+  background: white;
+  list-style-type: none;
+  text-align: left;
+}
+.menu2 li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+.menu2 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.menu2 a:hover {
+  background: green;
+  color: #333;
+}
+
+.anh{
+	display: flex;
+}
+
+.footer{
+	display: flex;
+	background-color: #65932A;
+	color: white;
+	margin-top: 20px;
+	height: 300px;
+}
+.thongtinfter li a{
+  text-decoration: none;
+  color: white;
+
+}
+.thongtinfter{
+	margin-left: 20px;
+}
+.lienhe{
+	margin-left: 20px;
+}
+.ndfooter{
+	margin-top: 20px;
+	line-height: 20px;
+}
+.ndfooter li {
+	margin-top: 15px;
+}
+.gachft{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background-color: green;
+
+}
+.cachtrai{
+	margin-left: 20px;
+}
+.cachphai{
+	margin-right: 20px;
+}
+.footer{
+	display: flex;
+}
+p{
+	font-size: 17px;
+}
+.nut{
+ 	width: 250px;
+ 	height: 40px;
+ 	color: black;
+ 	background-color: #32CD32;
+ 	
+
+ }
+
+ .nut{
+ 	width: 200px;
+ 	height: 40px;
+ 	color: black;
+ 	background-color: #32CD32;
+ 	
+
+ }
+ .butt{
+ 	width: 40px;
+ 	height: 40px;
+ 	color: black;
+ 	border-radius: 2px solid lightgrey;
+ }
+ .drop{
+	width: 300px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline:none;
+      padding: 12px 14px;
+  }
+
+ a{
+    text-decoration: none;
+}
+
+
+    </style>
+
+    <script type="text/javascript">
+      var cars = ["../Image/midterm2.png","../Image/midterm2.png","../Image/midterm2.png"];
+       var position = 0;
+        setInterval(function(){document.getElementById('myId').src= cars[position++];
+      if (position==2)
+      {
+      	position=0;
+      }
+      },3000);
+    </script>
+
+</head>
+<body>
+
+	<div class="flex-container" style="margin-top: 20px; margin-right: 30px;margin-left: 30px">
+		
+	
+		<div style="margin-left: 30px">
+			<img src="../Image/midterm1.PNG" width="150" height="90">
+		</div>
+		<div class="flex-container">
+			<form>
+					    <select class="drop" name="dropdown">
+					    <option value="danhsach" selected>Tất cả danh sách</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    <option value="sl">List1</option>
+					    </select>
+				</form>
+
+			
+		</div>
+		<div class="flex-container">
+			<form>
+        <input class="drop" type="texta" name="search" placeholder="Tìm kiếm sản phẩm" width="300px" height="60px" ><button class="butt"><img src="../Image/tim.png" width="20px" height="20px"></button>
+
+		</div>
+		
+		<div class="flex-container" style="margin-right: 20px; border=1; border-radius: 10px  ">
+			<button class="flex-container" style="background-color: #00FF00;color: white;border=1; border-radius: 15px">
+				<img src="../Image/giohang.png" width="40" height="40" style="margin-top: 15px; margin-right: 10px">
+				<p>Giỏ hàng(0)</p>
+				
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="menu">
+		<ul>
+		    <li><a href="#"> TRANG CHỦ</a></li>
+		    <li><a href="#">SẢN PHẨM</a></li>
+		    <li><a href="#">GIỚI THIỆU</a></li>
+		    <li><a href="#">TIN TỨC</a></li>
+		    <li><a href="#">LIÊN HỆ</a></li>
+
+		    
+		  
+		</ul>
+	</div>
+
+<div class="flex-container">
+		<div class =" menudoc">
+			<div class="tieude">CATEGORY
+			</div>
+			<div class="thanhphan">
+				<ul>
+					<li class="flex">
+						
+	
+						<a href="#">Đồ sơ sinh - bĩm tả</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25"  style="margin-right: 7px">
+					</li>
+					<li class="flex">
+						
+						<a href="#">Sữa - thực phẩm</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25"  style="margin-right: 7px">
+					</li>
+					<li class="flex">
+						
+						<a href="#">Ghế ăn - nôi cũ - xe đẩy</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25"  style="margin-right: 7px">
+					</li>
+					<li class="flex">
+						
+						<a href="#">Bình sữa - đồ dùng - máy móc</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25"  style="margin-right: 7px" >
+					</li>
+					<li class="flex">
+						
+						<a href="#">Thười trang - giày dép - nội thất</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25"  style="margin-right: 7px">
+					</li>
+					<li class="flex">
+						
+						<a href="#">Thế giới đồ chơi cho bé</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25" style="margin-right: 7px" >
+					</li>
+					<li class="flex">
+						
+						<a href="#">Gian dàng cho người lớn</a>
+						<img src="../Image/muitenngang.gif" width="25" height="25" style="margin-right: 7px" >
+					</li>
+					
+
+				</ul>
+			</div>
+		</div>
+      <div class="anhdong" style="margin-right: 30px">
+			<img  id="myId" src="../Image/midterm2.png" width="830" height="380">
+	  </div>
+
+	</div>
+
+	  <div class="menu2">
+		<ul>
+		    <li><a href="#"> MỚI NHẤT</a></li>
+		    <li><a href="#">KHUYẾN MÃI</a></li>
+		    <li><a href="#">XEM NHIỀU</a></li>
+		    
+        </ul>
+      </div>
+
+      <div class="anh">
+      	<div>
+      		<img src="../Image/midterm3.png" width="300px" height="300px">
+      		<button class="nut"><a href="../Html/detail.html">Thêm vào giỏ hàng</a></button>
+      		
+      	</div>
+
+      	<div>
+      		<img src="../Image/midterm4.png" width="300px" height="300px">
+      		<button class="nut"><a href="../Html/detail.html">Thêm vào giỏ hàng</a></button>
+      		
+      	</div>
+
+      	<div>
+      		<img src="../Image/midterm5.png" width="300px" height="300px">
+      		<button class="nut"><a href="../Html/detail.html">Thêm vào giỏ hàng</a></button>
+      		
+      	</div>
+
+      	<div>
+      		<img src="../Image/midterm6.png" width="300px" height="300px">
+      		<button class="nut"><a href="../Html/detail.html">Thêm vào giỏ hàng</a></button>
+      		
+      	</div>
+      	
+      </div>
+
+      <div class="footer">
+      	<div class="xe">
+      		<img src="../Image/xegiaohang.png" width="50px" height="50px" >
+      		<p><b>Giao hàng miễn phí</b></p>
+      		<p>Hóa đơn trên 200vnđ</p>
+      		
+      	</div>
+      	<div class="phieu">
+      		<img src="../Image/phieu.png" width="50px" height="50px" >
+      		<b>Phiếu quà tặng</b>
+
+      		
+      	</div>
+      	
+      	
+
+      	<div class="sale">
+      		<img src="../Image/sale.png" width="50px" height="50px" >
+      		<b>Sale hằng ngày</b>
+      		
+      		
+      	</div>
+
+      	<div class="mocua">
+      		<img src="../Image/giờ.png" width="50px" height="50px" >
+      		<p><b>Giờ mở cửa</b></p>
+      		<p>09:00-23:00(24/7)</p>
+      		
+      	</div>
+
+
+
+	   </div>
+
+
+
+		
+
+
+</body>
+</html>
